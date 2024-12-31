@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const promise=fetch("https://fakestoreapi.com/products/1")
+        promise.then(data=>{
+            return data.json();
+        }).then(data=>{
+            //console.log(data)
+           document.write(` ${data["id"]}<br> ${data["title"]} <br>${data.rating["rate"]} <br> <image src="${data.image}" width="200px" height="200px"></image> <br> ${data.description}`)
+        }).catch(error=>{
+            console.log("error")
+        })
+    </script>
+</body>
+</html>

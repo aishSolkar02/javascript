@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30/12/2024-callbacks</title>
+</head>
+<body>
+    <script>
+        // setTimeout(()=>{
+            //document.write("hello! I am a Programmer")
+        //},5000) 
+
+        function hello(callback){
+               document.write("hello");
+               console.log(callback)
+               callback();
+        }
+
+        function bye(){
+            document.write("Bye")
+        }
+
+        //hello(bye)
+        hello(()=>{
+            document.write("Hey Dear!")
+        })
+
+
+        
+    </script>
+</body>
+</html>

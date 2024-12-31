@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .box{
+        height:300px;
+        background-color: blueviolet;
+    }
+</style>
+</head>
+<body>
+    <form action="" id="details">
+        <input type="text" name="username">
+        <input type="number" name="age">
+        <input type="submit" value="submit">
+    </form>
+    <hr>
+    <div class="box"></div>
+    <script>
+        document.querySelector(".box").addEventListener("click",(e)=>{
+            console.log(e.target.style.backgroundColor="red")
+        })
+
+        document.getElementById("details").addEventListener("submit",(event)=>{
+                 event.preventDefault();
+            console.log(event.target.username.value)
+            console.log(event.target.age.value)
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!-- Date 24/12/2024 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+               height: 100px;
+               width: 100px;
+               background-color: aquamarine;
+               display: inline-block;
+        }
+
+        #container{
+            border: 2px solid salmon;
+        }
+    </style>
+    
+</head>
+<body>
+    
+       
+        <div id="container">
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+            <div class="box" id="box3"></div>
+            <div class="box" id="box4"></div>
+            <div class="box" id="box5"></div>
+        </div>
+
+        <script>
+            document.getElementById("container").addEventListener("click",()=>{
+                document.body.children[0].children[1].style.borderRadius="50%"
+            })
+        </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        const promise1=fetch("https://official-joke-api.appspot.com/random_joke")
+        promise1.then(data=>{
+            return data.json();
+        }).then((data)=>{
+           document.write(`type: ${data.type} id:${data.id}`)
+        }).catch((error)=>{
+            console.log("internal server problem")
+        })
+    </script>
+</body>
+</html>

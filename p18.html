@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- object like dictionary -->
+
+
+    <script>
+               
+const student={
+    name:"arati",
+    marks:50
+}
+
+const shop={
+    shopName:"all-in-one store",
+    shopNo:"GSTP1524",
+    location:"Virar East",
+    details:function(){
+        return (this.shopName+" "+this.shopNo+" "+this.location)
+    },
+    discount:["20% on grocery","25% on cloths","30% on furniture"],
+    shopkeeper:{
+        name:"ramu",
+        age:36,
+        qualification:"12th pass"
+    }
+
+}
+document.write(shop.details())
+
+
+
+
+
+    </script>
+</body>
+</html>

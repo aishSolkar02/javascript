@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form active="" id="btn">
+        
+    
+    <label for="">Enter city name: </label>
+    <input type="text" name="cityname">
+
+    <input type="submit" value="submit"></form>
+
+    <script>
+        document.getElementById("btn").addEventListener("submit",(e)=>{
+                   e.preventDefault();
+                   const promise1=fetch("https://api.coindesk.com/v1/bpi/currentprice.json".e.target.cityname.value)
+                   promise1.then(data=>{
+                    console.log(data)
+                   })
+        })
+        
+    </script>
+</body>
+</html>

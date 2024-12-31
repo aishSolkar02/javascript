@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <button id="button">Calculate</button>
+
+    <script>
+     document.getElementById("button").addEventListener("click",()=>{
+        let n1=parseInt(document.getElementById("num1").value)
+        let n2=parseInt(document.getElementById("num2").value)
+        document.write("addition:",n1+n2+"     subtraction:",n1-n2,"multiplication:",n1*n2,"division:",n1/n2)
+     })
+    </script>
+</body>
+</html>

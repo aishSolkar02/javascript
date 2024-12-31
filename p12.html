@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="color">
+        <input type="text" name="col">
+        <input type="submit" value="submit">
+        
+    </form>
+    <ol id="colortype"></ol>
+    <script>
+        document.getElementById("color").addEventListener("submit",(e)=>{
+                 e.preventDefault();
+                 const color=document.createTextNode(e.target.col.value);
+                 let div=document.createElement("div");
+                 div.style.backgroundColor=e.target.col.value;
+                 div.style.height="100px"
+                 div.style.width="100px"
+                 div.style.borderRadius="50%"
+                 document.getElementById("colortype").appendChild(div)
+                 
+                 
+        })
+    </script>
+</body>
+</html>

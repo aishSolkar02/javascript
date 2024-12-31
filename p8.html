@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="productDetails">
+        <label for="pName">Product Name</label>
+        <input type="text" name="pName">
+
+        <label for="pDescription">Product Description</label>
+        <input type="text" name="pDescription">
+
+        <label for="pPrice">Product price</label>
+        <input type="number" name="pPrice">
+        <input type="submit">
+        
+    </form> 
+    <script>
+        document.getElementById("productDetails").addEventListener("submit",(event)=>{
+            event.preventDefault;
+            document.write("Product Name: ",event.target.pName.value+"<br>")
+            document.write("Product Description: ",event.target.pDescription.value+"<br>")
+            document.write("Product price: ",event.target.pPrice.value+"<br>")
+        })
+    </script>
+</body>
+</html>

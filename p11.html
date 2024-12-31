@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="subjectForm">
+        <input type="text" name="subject">
+        <input type="submit" value="submit">
+        
+    </form>
+    <ol id="subjectlist"></ol>
+<script>
+    document.getElementById("subjectForm").addEventListener("submit",(e)=>{
+              e.preventDefault();
+              const text=document.createTextNode(e.target.subject.value);
+              let li=document.createElement("li")
+              li.appendChild(text)
+              document.getElementById("subjectlist").appendChild(li)
+
+    })
+
+    document.get
+</script>
+</body>
+</html>
